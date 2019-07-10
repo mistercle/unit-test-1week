@@ -57,12 +57,14 @@ public class UpperCaseCounterTest {
         //assertTrue로 맞는 테스트 코드 작성
         //assertFalse로 틀리는 값을 넣어 테스트 작성
         //assertThat 단정문을 사용해서 True인 테스트 코드 작성
+        assertThat(result, is(6));
         System.out.println("result :: " + result);
     }
 
     //잘못된 값을 참조했을 때 IndexOutOfBoundsException Exception이 발생하는지 테스트 코드 작성
     @Test
-    public void shouldThrowExceptionWhenGetZeroIndex() {
+    public void shouldThrowExceptionWhenGetZeroIndex()
+    {
         new ArrayList<Object>().get(0);
     }
 
