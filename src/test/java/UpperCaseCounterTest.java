@@ -39,6 +39,11 @@ public class UpperCaseCounterTest {
 
         int numberOfUpperCaseCharactersInString = upperCaseCounter.getNumberOfUpperCaseCharactersInString(str);
 
+        System.out.println("result :: " + numberOfUpperCaseCharactersInString);
+
+        assertTrue(numberOfUpperCaseCharactersInString == 10);
+        assertFalse(numberOfUpperCaseCharactersInString == 9);
+        assertThat(numberOfUpperCaseCharactersInString, is(10));
         //assertTrue로 맞는 테스트 코드 작성
         //assertFalse로 틀리는 값을 넣어 테스트 작성
         //assertThat 단정문을 사용해서 True인 테스트 코드 작성
