@@ -38,10 +38,10 @@ public class CustomCalculatorTest {
 
     //나누기 테스트 작성
     @Test
-    public void divide() {
+    public void divide_return_5_for_input_25_5() {
         customCalculator = new CustomCalculator();
         int result = customCalculator.divide(25,5);
-        /* 이곳에 테스트 코드를 작성하세요. */
+        assertThat(result, is(5));
         System.out.println("result :: " + result);
     }
 }
