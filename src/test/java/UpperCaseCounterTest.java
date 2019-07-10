@@ -15,7 +15,10 @@ public class UpperCaseCounterTest {
     public void getNumberOfUpperCaseCharactersInString_return_0_for_null_input(){
         String str = null;
 
-//        int numberOfUpperCaseCharactersInString = upperCaseCounter.getNumberOfUpperCaseCharactersInString(str);
+        int numberOfUpperCaseCharactersInString = upperCaseCounter.getNumberOfUpperCaseCharactersInString(str);
+
+        System.out.println("result :: " + numberOfUpperCaseCharactersInString);
+        assertTrue(numberOfUpperCaseCharactersInString == 0);
     }
 
     //반겂울 전달했을 때 0을 리턴하는지에 대한 테스트 작성
