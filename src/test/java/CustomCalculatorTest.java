@@ -23,7 +23,7 @@ public class CustomCalculatorTest {
     public void subtract_return_13_for_input_23_10() {
         customCalculator = new CustomCalculator();
         int result = customCalculator.subtract(23,10);
-        /* 이곳에 테스트 코드를 작성하세요. */
+        assertThat(result, is(13));
         System.out.println("result :: " + result);
     }
 
